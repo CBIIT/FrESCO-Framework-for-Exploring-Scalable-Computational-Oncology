@@ -48,3 +48,9 @@ For more details, refer to this [publication](https://bmcmedresmethodol.biomedce
 - Ana Paula Sales (LLNL)
 
 LLNL - Lawrence Livermore National Laboratory
+
+## License
+
+<Who> released <Capability Name> under <which> license.
+ 
+For details, refer to [LICENSE](./LICENSE) and [NOTICE](./NOTICE).
