@@ -13,11 +13,11 @@ conda activate ms39
 ```
 Install PyTorch 1.13.1. In Linux CUDA enabled setup, note that your specific cudatoolkit version requirements may vary,
 ```shell
-conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 pytorch-cuda=11.7 -c pytorch -c nvidia
+conda install -y pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 pytorch-cuda=11.7 -c pytorch -c nvidia
 ```
 otherwise, for CPU only,
 ```shell
-conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 cpuonly -c pytorch
+conda install -y pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 cpuonly -c pytorch
 ```
 Further PyTorch instructions may be found in the [PyTorch docs](https://pytorch.org/docs/stable/index.html).
 
