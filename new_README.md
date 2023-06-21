@@ -7,9 +7,7 @@ The National Cancer Institute (NCI) monitors population level cancer trends as p
 Researchers interested in producing realistic synthetic clinical data.
 
 ## Usability	
-Users must provide their own input data of discrete/categorical variables only. SYNDATA includes scripts to prepare an example dataset. 
-
-To utilize FrESCO, users must have experience with Python and be familiar with the methods listed above to set the parameters appropriately. 
+To utilize FrESCO, users should have experience with Python and deep learning to set the model parameters appropriately. 
  
 A GPU-powered computer would allow faster execution of FrESCO.
 
@@ -49,8 +47,7 @@ note =
  - Zachary Fox (ORNL)
  - Jamaludin Mohd-Yusof (LANL)
 
-LANL - Los Alamos National Laboratory
-ORNL - Oak Ridge National Laboratory
+LANL - Los Alamos National Laboratory; ORNL - Oak Ridge National Laboratory
 
 ## License
 
