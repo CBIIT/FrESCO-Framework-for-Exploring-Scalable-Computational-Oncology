@@ -1,32 +1,20 @@
-# NCI-DOE-Collab-Pilot3-SYNDATA
+# NCI-DOE-Collab-Pilot3-FrESCO-Framework-for-Exploring-Scalable-Computational-Oncology
 
 ## Description
-SYNDATA is a suite of statistical and machine learning methods to generate discrete/categorical synthetic data. SYNDATA is useful for data scientists and statisticians that need data to train their models but have limited access to real patient data due to HIPAA constraints.
-
-SYNDATA includes the following methods to generate synthetic data:
- * Mixture of Product of Multinomials (MPoM) 
- * Independent Marginals
- * Categorical Latent Gaussian process (CLGP)
- * Multivariate Imputation by Chained Equations (MICE)
-
-For more details on the methods implemented and the metrics used to evaluate synthetic data generation methods, refer to this paper: [Generation and evaluation of synthetic patient data](https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-020-00977-1).
+The National Cancer Institute (NCI) monitors population level cancer trends as part of its Surveillance, Epidemiology, and End Results (SEER) program. This program consists of state or regional level cancer registries which collect, analyze, and annotate cancer pathology reports. From these annotated pathology reports, each individual registry aggregates cancer phenotype information and summary statistics about cancer prevalence to facilitate population level monitoring of cancer incidence. Extracting cancer phenotype from these reports is a labor intensive task, requiring specialized knowledge about the reports and cancer. Automating this information extraction process from cancer pathology reports has the potential to  improve not only the quality of the data by extracting information in a consistent manner across registries, but to improve the quality of patient outcomes by reducing the time to assimilate new data and enabling time-sensitive applications such as precision medicine. Here we present FrESCO: Framework for Exploring Scalable Computational Oncology, a modular deep-learning natural language processing (NLP) library for extracting pathology information from clinical text documents.
 
 ## User Community
-Data scientists and statisticians interested in producing realistic synthetic clinical data.
+Researchers interested in producing realistic synthetic clinical data.
 
 ## Usability	
 Users must provide their own input data of discrete/categorical variables only. SYNDATA includes scripts to prepare an example dataset. 
 
-To utilize SYNDATA, users must have experience with Python and be familiar with the methods listed above to set the parameters appropriately. 
+To utilize FrESCO, users must have experience with Python and be familiar with the methods listed above to set the parameters appropriately. 
  
-A GPU-powered computer would allow faster execution of SYNDATA.
+A GPU-powered computer would allow faster execution of FrESCO.
 
 ## Uniqueness	
-SYNDATA gives the user four methods to use for generating synthetic clinical data containing discrete/categorical variables only. 
-
-In addition, SYNDATA provides performance metrics for assessing each method individually and/or comparing multiple methods at once. Some of these performance metrics are as follows:
- * Data utility metrics gauge to what extent the method captures and transfers the statistical properties of the real (private) data to the synthetic dataset (that is, support coverage, cross-classification).
- * Disclosure metrics measure how much of the real data may be revealed (directly or indirectly) by the synthetic data (that is, membership disclosure, attribute disclosure).
+FrESCO provides a modular artificial intelligence (AI) pipeline to take cancer pathology reports and make predictions about characteristics of the cancer. The individual modules making up the codebase allow for rapid prototyping of new model architectures, model profiling,and a compendium of the Modeling Outcomes using Surveillance data and Scalable Artificial Intelligence for Cancer ([MOSSAIC](https://datascience.cancer.gov/collaborations/nci-department-energy-collaborations/mossaic)) project to date.
 
 ## Components	
 
@@ -37,20 +25,35 @@ In addition, SYNDATA provides performance metrics for assessing each method indi
 Refer to this [README](./Technical_README.md).
 
 ## Reference
-For more details, refer to this [publication](https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-020-00977-1).
+If you use FrESCO in your work please cite this repository. The bibtex entry is:
+```
+@misc{osti_1958817,
+title = {FrESCO},
+author = {Spannaus, Adam and Gounley, John and Hanson, Heidi and Chandra Shekar, Mayanka and Schaefferkoetter, Noah and Mohd-Yusof, Jamaludin and Fox, Zach and USDOE},
+abstractNote = {The National Cancer Institute (NCI) monitors population level cancer trends as part of its Surveillance, Epidemiology, and End Results (SEER) program. This program consists of state or regional level cancer registries which collect, analyze, and annotate cancer pathology reports. From these annotated pathology reports, each individual registry aggregates cancer phenotype information and summary statistics about cancer prevalence to facilitate population level monitoring of cancer incidence. Extracting cancer phenotype from these reports is a labor intensive task, requiring specialized knowledge about the reports and cancer. Automating this information extraction process from cancer pathology reports has the potential to improve not only the quality of the data by extracting information in a consistent manner across registries, but to improve the quality of patient outcomes by reducing the time to assimilate new data and enabling time-sensitive applications such as precision medicine. Here we present FrESCO: Framework for Exploring Scalable Computational Oncology, a modular deep-learning natural language processing (NLP) library for extracting pathology information from clinical text documents.},
+url = {https://www.osti.gov//servlets/purl/1958817},
+doi = {10.11578/dc.20230227.2},
+url = {https://www.osti.gov/biblio/1958817}, year = {2023},
+month = {3},
+note =
+}
+```
 
 ## Authors
 
-- Andre Goncalves (LLNL)
-- Rui Meng (LLNL)
-- Braden Soper (LLNL)
-- Priyadip Ray (LLNL)
-- Ana Paula Sales (LLNL)
+ - Adam Spannaus (ORNL)
+ - John P Gounley (ORNL)
+ - Noah T Schaefferkoetter (ORNL)
+ - Mayanka Chandra Shekar (ORNL)
+ - Heidi Hanson (ORNL)
+ - Zachary Fox (ORNL)
+ - Jamaludin Mohd-Yusof (LANL)
 
-LLNL - Lawrence Livermore National Laboratory
+LANL - Los Alamos National Laboratory
+ORNL - Oak Ridge National Laboratory
 
 ## License
 
-<Who> released <Capability Name> under <which> license.
+Oak Ridge National Laboratory released FrESCO under the MIT license.
  
-For details, refer to [LICENSE](./LICENSE) and [NOTICE](./NOTICE).
+For details, refer to [LICENSE](./LICENSE).
